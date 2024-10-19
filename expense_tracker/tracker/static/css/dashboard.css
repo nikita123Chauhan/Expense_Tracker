@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 100px;
+    /* Set the desired width */
+    height: 100px;
+    /* Set the desired height */
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Ensure the image covers the entire area without distortion */
+    border: 2px solid #ddd;
+    /* Optional: add a border around the image */
+    margin: 10px 0;
+    /* Optional: add some spacing */
+}
+
+.profile h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 0.9em;
+    color: #cfd2da;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar nav ul li a:hover {
+    color: #00bfa5;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    width: 150px;
+    /* Set the width of the box */
+    padding: 10px;
+    /* Space inside the box */
+    border: 2px solid blue;
+    /* Border around the box */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #e0f0ff;
+    /* Light blue background */
+    text-align: center;
+    /* Center the text */
+    margin: 20px auto;
+    /* Center the box horizontally */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    /* Adds shadow */
+}
+
+.logout a {
+    color: blue;
+    /* Blue color for the link */
+    text-decoration: none;
+    /* Remove underline from the link */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+.logout a:hover {
+    color: darkblue;
+    /* Change link color on hover */
+    background-color: #cce5ff;
+    /* Light background on hover */
+    padding: 5px 10px;
+    /* Add some padding when hovering */
+    border-radius: 5px;
+    /* Rounded edges on hover */
+}
+
+.content {
+    margin-top: 20px;
+}

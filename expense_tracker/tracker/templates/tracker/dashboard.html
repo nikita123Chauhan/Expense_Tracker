@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="{% static 'images/k4.jpg' %}" alt="Profile Image" id="profile-pic">
+                <h3>{{ user.username }}</h3>
+                <p>{{ user.email }}</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'edit_profile' %}">Edit Profile</a></li>
+                    <li><a href="{#}">Expense Categories</a></li>
+                    <li><a href="{#}">Income</a></li>
+                    <li><a href="{#}">Add Expense</a></li>
+                    <li><a href="{#}">Expense Report</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    <li><a href="{#}">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h2>Dashboard</h2>
+            </header>
+    
+            <!-- Dynamic content will be injected here -->
+            <div class="content">
+                <h3>Welcome, {{ user.username }}!</h3>
+                <p>Here you can manage your expenses efficiently.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
